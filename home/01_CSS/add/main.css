@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+header{
+    text-align: right;
+}
+
+h1{
+    font-size: medium;
+     line-break:normal;
+}
+
+address{
+    font-style: italic;
+    line-break:normal;
+}
+
+span{
+    line-break:normal;
+}
+
+h3{
+    text-align: left;
+    text-indent: 15px; 
+    font-family: 'Bad Script';
+}
+
+article{
+    text-align: left;
+    text-indent: 15px;
+     font-family: 'Bad Script',cursive;
+}
+
+footer{
+    text-align: left;
+    text-indent: 15px;
+}
