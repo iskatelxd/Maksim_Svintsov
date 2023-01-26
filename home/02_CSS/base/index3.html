@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Страница с блоками</title>
+    <style>
+        .topblock{
+            background-color:rgb(255, 255, 255);
+        }
+        .navig{
+            background-color:rgb(204,204,204);
+            width: 15em;
+            float: left;
+        }
+        .article{
+            background-color:rgb(170,170,170);
+            margin-bottom: .2em;
+            margin-left: 15em;
+            padding:1px;
+        }
+        .footer{
+            background-color:rgb(189, 187, 187);
+        }
+        .clear{
+            clear: both;
+        }
+        img{
+            float: right;
+        }
+        
+    </style>
+</head>
+<body>
+        <div class="topblock">
+            <div class="navig"> 
+                <h1>Блок навигации</h1>
+                <ul>
+                    <li>Ширина 15em</li>
+                    <li>Должен присутствовать цвет фона</li>
+                    <li>Располагается слева</li>
+                    <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показанно в данном примере</li>
+                </ul>
+            </div>
+            <div class="article">
+                <h1>Статья 1</h1>
+                <p>Размер блока: <br>
+                занимает всю доступную ширину<br>
+                должен присутствовать цвет фона<br>
+                во всех статьях сделайте отступ от соседней равным 2em,при помощи <br>
+                свойства margin-bottom.</p>
+            </div>
+            <div class="article">
+                <h1>Статья 2</h1>
+                <p>Размер блока: <br>
+                занимает всю доступную ширину<br>
+                должен присутствовать цвет фона<br>
+                во всех статьях сделайте отступ от соседней равным 2em,при помощи <br>
+                свойства margin-bottom. Картинка вставлена при помощи тега, плавание<br>
+                организованно по правому краю внутри данной статьи для этой картинки.</p>
+                <img src="icon.png" alt="icon_e-mail" title="e-mail">
+                <div class="clear"></div>
+            </div>
+            <div class="footer">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом</div>
+            </div>
+            
+        </div>
+        
+    
+</body>
+</html>
