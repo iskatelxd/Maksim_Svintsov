@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      table {
+        width: 50%;
+        border: 1px solid black;
+        margin: 20px auto;
+      }
+      td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      #showBtn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="myTable">
+      <tr>
+        <td>Row 1, Column 1</td>
+        <td>Row 1, Column 2</td>
+      </tr>
+      <tr>
+        <td>Row 2, Column 1</td>
+        <td>Row 2, Column 2</td>
+      </tr>
+      <tr>
+        <td>Row 3, Column 1</td>
+        <td>Row 3, Column 2</td>
+      </tr>
+    </table>
+    <button id="showBtn">Show All Rows</button>
+    <script>
+      $(document).ready(function() {
+        $("#myTable tr").click(function() {
+          $(this).hide();
+        });
+    $("#showBtn").click(function() {
+      $("#myTable tr").show();
+    });
+  });
+</script>
+  </body>
+</html>

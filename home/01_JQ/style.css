@@ -1,0 +1,28 @@
+table {
+    width: 75%;
+    height: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+th {
+    font-size: 25px;
+    background: rgb(185, 25, 25);
+    padding: 50px;
+}
+
+td {
+    border: 1px dotted black;
+}
+
+tfoot tr td {
+    font-size: 20px;
+    background: rgb(185, 25, 25);
+}
+
+button {
+    height: 23px;
+    width: 250px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Данные о сотрудниках</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr class="table_header">
+                <th>
+                    ФИО
+                </th>
+                <th>
+                    Пол
+                </th>
+                <th>
+                    Должность
+                </th>
+                <th>
+                    Дата рождения
+                </th>
+                <th>
+                    Данные 01
+                </th>
+                <th>
+                    Данные 02
+                </th>
+            </tr>
+            <tr class="info">
+                <td>
+                    Иванов Иван Иванович
+                </td>
+                <td>
+                    М
+                </td>
+                <td>
+                    Начальник
+                </td>
+                <td>
+                    01.01.1960
+                </td>
+                <td>
+                    4567
+                </td>
+                <td>
+                    3453
+                </td>
+            </tr>
+            <tr class="info">
+                <td>
+                    Петрова Илона Петровна
+                </td>
+                <td>
+                    Ж
+                </td>
+                <td>
+                    Секретарь
+                </td>
+                <td>
+                    01.01.1989
+                </td>
+                <td>
+                    98795
+                </td>
+                <td>
+                    46523
+                </td>
+            </tr>
+            <tr class="info">
+                <td>
+                    Сидоров Илья Игоревич
+                </td>
+                <td>
+                    М
+                </td>
+                <td>
+                    Бухгалтер
+                </td>
+                <td>
+                    01.01.1979
+                </td>
+                <td>
+                    743434
+                </td>
+                <td>
+                    987979
+                </td>
+            </tr>
+            <tr class="info">
+                <td>
+                    Пупин Фёдор Фёдорович
+                </td>
+                <td>
+                    М
+                </td>
+                <td>
+                    Водитель
+                </td>
+                <td>
+                    01.01.1963
+                </td>
+                <td>
+                    74323434
+                </td>
+                <td>
+                    9232379
+                </td>
+            </tr>
+            <tr class="info">
+                <td>
+                    Крупин Сергей Иванович
+                </td>
+                <td>
+                    М
+                </td>
+                <td>
+                    Водитель
+                </td>
+                <td>
+                    01.01.1983
+                </td>
+                <td>
+                    3234534
+                </td>
+                <td>
+                    923123379
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">ДАННЫЕ О СОТРУДНИКАХ</td>
+            </tr>
+        </tfoot>
+    </table>
+<div>
+    <button> Нет скрытых строк</button>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script>
+        $(document).ready(function ($) {
+
+            $('.info').on('click', function () {
+                $(this).hide();
+                $('button').text('Показать все строки');
+                $('.table_header').css('height', '65');
+                $('table').css ('height', '85');
+                $('.info').css ('height', '40');
+            })
+
+            $(':button').on('click', function () {
+                $(this).text('Нет скрытых строк');
+                $('.info').show();
+            })
+        })
+    </script>
+
+</body>
+
+</html>

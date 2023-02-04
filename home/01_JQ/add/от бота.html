@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      .error {
+        border: 1px solid red;
+      }
+      .success {
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="username" placeholder="Enter username">
+      <input type="password" id="password" placeholder="Enter password">
+      <input type="password" id="confirmPassword" placeholder="Confirm password">
+    </form>
+    <script>
+      $(document).ready(function() {
+        $("input").change(function() {
+          if ($("#username").val() == "" || $("#password").val() == "" || $("#confirmPassword").val() == "") {
+            $("input").addClass("error");
+          } else {
+            $("input").removeClass("error");
+            if ($("#password").val() == $("#confirmPassword").val()) {
+              $("input").addClass("success");
+            } else {
+              $("input").removeClass("success");
+            }
+          }
+        });
+      });
+    </script>
+        <!--Сверстана форма с 3 инпутами (username, password, confirmPassword)
+При вводе разных значений в инпуты, если хотя бы один инпут пустой, все инпуты подсвечиваются красным цветом
+Если пароли совпадают, то все инпуты подсвечиваются зеленым цветом-->
+  </body>
+</html>
